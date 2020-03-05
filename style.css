@@ -1,0 +1,304 @@
+/* CSS Variables */
+:root {
+  --primary-color: #f39c12;
+  --secondary-color: #f8c471;
+  --text-color: #262626;
+  --black-color: #111;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #fff;
+  line-height: 1.6;
+  letter-spacing: -1;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/******* Navigation ********/
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--black-color);
+  color: #fff;
+  height: 6rem;
+}
+
+.main-nav .logo {
+  margin-left: 25px;
+}
+
+.main-nav .logo h1 {
+  font-size: 2rem;
+}
+
+.main-nav .logo .highlights {
+  color: var(--primary-color);
+}
+
+.main-nav .menu {
+  display: flex;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+
+.main-nav .menu a {
+  margin-right: 20px;
+  border-bottom: none;
+  transition: border-bottom 0.2s ease;
+}
+
+.main-nav .menu a:hover {
+  border-bottom: 2px var(--primary-color) solid;
+}
+
+.main-nav .menu li.active a {
+  border-bottom: 2px var(--primary-color) solid;
+}
+
+/********* Landing **********/
+
+/* Showcase */
+.showcase {
+  width: 100%;
+  height: 550px;
+  background: url("images/showcase-image.jpg") no-repeat center center/cover;
+  margin-bottom: 20px;
+}
+
+/* Content */
+.content .content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px;
+  margin: 40px 0;
+}
+
+.content .banner-text {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  border-bottom: 1px var(--primary-color) solid;
+}
+
+.content .content-wrapper .main-content p {
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+.content .content-wrapper .first-container {
+  margin-bottom: 40px;
+}
+
+.content .content-wrapper .aside {
+  background-color: var(--secondary-color);
+  opacity: 0.6;
+}
+
+.content .content-wrapper .aside .aside-banner {
+  color: #fff;
+  background: var(--black-color);
+  padding: 1.2rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content .content-wrapper .aside .most-visited .serengeti {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 10px;
+  margin-left: 20px;
+  grid-gap: 20px;
+}
+
+.content .content-wrapper .aside .most-visited .manyara {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 10px;
+  margin-left: 20px;
+  grid-gap: 20px;
+}
+
+.content .content-wrapper .aside .most-visited .mikumi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 10px;
+  margin-left: 20px;
+  grid-gap: 20px;
+}
+
+.content .content-wrapper .aside .most-visited .ngorongoro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 10px;
+  margin-left: 20px;
+  grid-gap: 20px;
+}
+
+.content .content-wrapper .aside .most-visited img {
+  width: 250px;
+  height: 140px;
+}
+/********* National Parks *********/
+
+/* Main */
+.national-parks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px;
+  margin: 40px 0;
+}
+
+.national-parks .main-grid {
+  width: 800px;
+}
+
+.national-parks img {
+  width: 250px;
+  height: 180px;
+}
+
+.national-parks .main-grid .parks-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+  border-left: 8px solid #eaeded;
+  border-right: 20px solid #eaeded;
+  border-bottom: 4px solid #eaeded;
+  border-top: 4px solid #eaeded;
+  margin-bottom: 20px;
+}
+
+.national-parks .main-grid .parks-wrapper .text-wrapper {
+  margin-left: 20px;
+}
+
+/* Aside */
+.national-parks .aside-grid {
+  width: 350px;
+  height: 760px;
+  background: #eaeded;
+}
+
+.national-parks .aside-grid .aside-banner {
+  color: #fff;
+  background: #929191;
+  padding: 1.2rem;
+  text-transform: capitalize;
+}
+
+.aside-grid .facts .facts-containers {
+  border: 1px #fff solid;
+  padding: 1.4rem;
+}
+
+.aside-grid .facts h4 {
+  font-size: 1.025rem;
+  color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black-color);
+  color: #fff;
+  text-align: center;
+  height: 52px;
+}
+
+/* Media */
+@media (max-width: 768px) {
+  .main-nav {
+    display: block;
+    height: 8rem;
+  }
+  .content .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav .logo {
+    margin-left: 10px;
+  }
+
+  .main-nav .logo h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-nav .menu {
+    margin-top: 1.2rem;
+  }
+
+  .content .content-wrapper .first-container,
+  .second-container {
+    padding: 1.4rem;
+  }
+
+  .national-parks {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .national-parks .main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 350px;
+    margin-left: 40px;
+  }
+
+  .national-parks .main-grid .parks-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .national-parks .aside-grid {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content .banner-text {
+    font-size: 1.6rem;
+  }
+
+  .main-nav .logo {
+    margin-left: 10px;
+  }
+
+  .main-nav .logo h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-nav .menu {
+    margin-top: 1.2rem;
+  }
+  .content .banner-text {
+    font-size: 1.6rem;
+  }
+}
