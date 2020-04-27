@@ -1,0 +1,23 @@
+{
+  "name": "safari",
+  "version": "1.0.0",
+  "description": "Website that shows the beauty of diverse Tanzania National Parks, from Ngorongoro, Serengeti, to Manyara, Mikumi and so much more. Welcome and Enjoy!",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gh-pages -d safari"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noelnoja/safari.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noelnoja/safari/issues"
+  },
+  "homepage": "https://github.com/noelnoja/safari",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
